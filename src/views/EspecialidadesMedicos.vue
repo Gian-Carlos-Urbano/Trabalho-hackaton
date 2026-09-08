@@ -30,7 +30,7 @@ import { RouterLink } from 'vue-router'
           </RouterLink>
       </li>
       <li>
-        <img src="../imagem/pediatra.png" alt="" />
+        <img src="../imagem/pediatra1.png" alt="" />
         <h3>Pediatra</h3>
         <p>Cuidado especializado para a saúde e desenvolvimento das crianças de 0 a 18 anos.</p>
         <h4>Serviços:</h4>
