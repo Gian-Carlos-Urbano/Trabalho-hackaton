@@ -1,17 +1,9 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+import AppBanner from '@/components/Produtos/AppBanner.vue';
 </script>
 <template>
   <main>
-    <section class="banner">
-
-      <h2>
-        <RouterLink to="/">-&gt; Voltar</RouterLink>
-      </h2>
-      <p>
-        Entre em contato ou visite nossa unidade. Queremos te ajudar.
-      </p>
-    </section>
+    <AppBanner key="'contatos'" :titulo="'Contato'" :subtitulo="'Entre em contato ou visite nossa unidade. Queremos te ajudar.'"/>
     <section class="formulario">
       <form action="">
         <div class="tituloForm">
@@ -100,12 +92,7 @@ section {
   background-color: white;
 }
 
-main .banner {
-  background: linear-gradient(63deg, #447CDB, #267154, #4DDC45);
-  padding: 1vw 2vw 3vw 2vw;
-  color: white;
-  margin: 0 0 0 0;
-}
+
 
 main h2 {
   font-size: 2rem;
