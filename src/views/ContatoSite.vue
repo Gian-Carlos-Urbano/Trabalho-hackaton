@@ -1,9 +1,10 @@
 <script setup>
 import AppBanner from '@/components/Produtos/AppBanner.vue';
+import paginas from '@/components/data/data';
 </script>
 <template>
   <main>
-    <AppBanner key="paginas[2].pagina" :titulo="paginas[2].titulo" :subtitulo="paginas[2].subtitulo" />
+    <AppBanner key="paginas[2].pagina" :titulo="paginas[2].titulo" :subtitulo="paginas[2].subtitulo"/>
     <section class="formulario">
       <form action="">
         <div class="tituloForm">

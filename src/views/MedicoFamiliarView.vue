@@ -1,12 +1,12 @@
+<script setup>
+import AppBanner from '@/components/Produtos/AppBanner.vue';
+import paginas from '@/components/data/data';
+import chart1 from '../imagem/img1.jpg';
+import chart2 from  '../imagem/image2.jpg';
+</script>
 <template>
+   <AppBanner key="paginas[3].pagina" :titulo="paginas[3].titulo" :subtitulo="paginas[3].subtitulo"/>
   <div class="doctor-page">
-    <header class="hero">
-      <div class="hero-inner">
-        <h1>Médico da Família</h1>
-        <p>Acompanhamento contínuo e integral da saúde de você e sua família.</p>
-      </div>
-    </header>
-
     <main class="container">
       <section class="conteudo">
         <div class="profile-card">
@@ -87,29 +87,10 @@
   </div>
 </template>
 
-<script setup>
-import chart1 from '../imagem/img1.jpg';
-import chart2 from  '../imagem/image2.jpg';
-</script>
+
 
 <style scoped>
-.hero {
-  background: linear-gradient(90deg, #1a9df7, #27a96b);
-  color: white;
-  padding: 38px 0;
-}
-.hero-inner {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 24px;
-}
-.hero h1 {
-  margin: 0;
-  font-size: 44px;
-}
-.hero p {
-  margin: 6px 0 0;
-}
+
 .container {
   max-width: 1440px;
   margin: 34px auto;
