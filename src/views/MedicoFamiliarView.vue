@@ -1,3 +1,12 @@
+<script setup>
+
+import { ref } from 'vue'
+import { horarios } from '@/data/horarios'
+import chart1 from '../imagem/img1.jpg';
+import chart2 from  '../imagem/image2.jpg';
+
+</script>
+
 <template>
   <div class="doctor-page">
     <header class="hero">
@@ -66,6 +75,7 @@
 
           <div class="card-hours">
             <h4>Horário de Atendimento</h4>
+            
             <ul>
               <li>Segunda–Feira: <span>8h – 17h</span></li>
               <li>Terça–Feira: <span>8h – 17h</span></li>
@@ -87,10 +97,7 @@
   </div>
 </template>
 
-<script setup>
-import chart1 from '../imagem/img1.jpg';
-import chart2 from  '../imagem/image2.jpg';
-</script>
+
 
 <style scoped>
 .hero {
