@@ -1,14 +1,17 @@
 <script setup>
 import { RouterLink } from 'vue-router'
+import AppBanner from '@/components/Produtos/AppBanner.vue';
+import paginas from '@/components/data/data';
 </script>
 <template>
-  <div class="banner">
+  <AppBanner key="paginas[3].pagina" :titulo="paginas[3].titulo" :subtitulo="paginas[3].subtitulo"/>
+  <!-- <div class="banner">
     <div class="voltar">
       <RouterLink to="/">← Voltar</RouterLink>
     </div>
     <h2>Especialidades Médicas</h2>
     <p>Conheça todas as especialidades disponíveis na UBS Digital e agende sua consulta</p>
-  </div>
+  </div> -->
   <section>
     <ul>
       <li>

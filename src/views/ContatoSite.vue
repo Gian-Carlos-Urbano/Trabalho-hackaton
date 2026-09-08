@@ -3,7 +3,7 @@ import AppBanner from '@/components/Produtos/AppBanner.vue';
 </script>
 <template>
   <main>
-    <AppBanner key="'contatos'" :titulo="'Contato'" :subtitulo="'Entre em contato ou visite nossa unidade. Queremos te ajudar.'"/>
+    <AppBanner key="paginas[2].pagina" :titulo="paginas[2].titulo" :subtitulo="paginas[2].subtitulo" />
     <section class="formulario">
       <form action="">
         <div class="tituloForm">
