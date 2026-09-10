@@ -104,7 +104,9 @@
           <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M8%202v3%22%20%2F%3E%3Cpath%20d%3D%22M16%202v3%22%20%2F%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%222%22%20%2F%3E%3Cpath%20d%3D%22M3%209h18%22%20%2F%3E%3C%2Fsvg%3E" width="20" height="20" alt="">
           <h2>Próximos Agendamentos</h2>
         </div>
-        <button class="botao-contorno-azul">Agendar Novo</button>
+      <router-link to="/agendar-exame">
+  <button class="botao-contorno-azul">Agendar Novo</button>
+</router-link>
       </div>
  
 
@@ -148,12 +150,16 @@
           UBS Digital - Sala 3
         </p>
  
-        <div class="acoes-agendamento">
-          <button class="botao-reagendar">Reagendar</button>
-          <button class="botao-cancelar">Cancelar</button>
-        </div>
+
+        
+   <router-link to="/agendar-exame">
+  <button class="botao-reagendar">Reagendar</button>
+</router-link>
+<router-link to="/agendar-exame">
+  <button class="botao-cancelar">Cancelar</button>
+</router-link>
       </div>
- 
+
       <!-- Exame -->
       <div class="item-agendamento">
         <div class="emblemas">
@@ -178,18 +184,24 @@
           </span>
         </div>
  
-        <p class="local-agendamento">
+        <p class="item-detalhe">
           <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%239ca3af%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M20%2010c0%204.993-5.539%2010.193-7.399%2011.799a1%201%200%200%201-1.202%200C9.539%2020.193%204%2014.993%204%2010a8%208%200%200%201%2016%200%22%20%2F%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2210%22%20r%3D%223%22%20%2F%3E%3C%2Fsvg%3E" width="15" height="15" alt="">
           UBS Digital - Lab
         </p>
  
         <div class="acoes-agendamento">
-          <button class="botao-reagendar">Reagendar</button>
-          <button class="botao-cancelar">Cancelar</button>
+
+
+<router-link to="/agendar-exame">
+  <button class="botao-reagendar">Reagendar</button>
+</router-link>
+<router-link to="/agendar-exame">
+  <button class="botao-cancelar">Cancelar</button>
+</router-link>
+
         </div>
       </div>
     </div>
-
 
 
 
@@ -211,8 +223,8 @@
           <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%2316a34a%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M6%2022a2%202%200%200%201-2-2V4a2%202%200%200%201%202-2h8a2.4%202.4%200%200%201%201.704.706l3.588%203.588A2.4%202.4%200%200%201%2020%208v12a2%202%200%200%201-2%202z%22%20%2F%3E%3Cpath%20d%3D%22M14%202v5a1%201%200%200%200%201%201h5%22%20%2F%3E%3Cpath%20d%3D%22M10%209H8%22%20%2F%3E%3Cpath%20d%3D%22M16%2013H8%22%20%2F%3E%3Cpath%20d%3D%22M16%2017H8%22%20%2F%3E%3C%2Fsvg%3E" width="20" height="20" alt="">
           <h2>Resultados de Exames</h2>
         </div>
-        <a href="#" class="link-ver-todos">Ver Todos</a>
-      </div>
+<router-link to="/minha-area" class="link-ver-todos">Ver Todos</router-link>     
+ </div>
  
       <div class="item-exame">
         <div class="item-exame-esquerda">
@@ -224,12 +236,18 @@
             <p class="subtitulo-exame">02 Mai 2026 • Dr. Carlos Mendes</p>
           </div>
         </div>
+
+     <a href="/src/imagem/preview.webp" download="resultado-exame.webp">
         <button class="botao-baixar">
+
+         
           <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M12%2015V3%22%20%2F%3E%3Cpath%20d%3D%22M21%2015v4a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2v-4%22%20%2F%3E%3Cpath%20d%3D%22m7%2010%205%205%205-5%22%20%2F%3E%3C%2Fsvg%3E" width="14" height="14" alt="">
           Baixar
         </button>
+          </a>
       </div>
- 
+
+
       <div class="item-exame">
         <div class="item-exame-esquerda">
           <div class="icone-situacao-exame icone-situacao-verde">
@@ -240,10 +258,13 @@
             <p class="subtitulo-exame">28 Abr 2026 • Dra. Ana Silva</p>
           </div>
         </div>
+
+        <a href="/src/imagem/preview.webp" download="resultado-exame.webp">
         <button class="botao-baixar">
           <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%232563eb%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M12%2015V3%22%20%2F%3E%3Cpath%20d%3D%22M21%2015v4a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2v-4%22%20%2F%3E%3Cpath%20d%3D%22m7%2010%205%205%205-5%22%20%2F%3E%3C%2Fsvg%3E" width="14" height="14" alt="">
           Baixar
         </button>
+      </a>
       </div>
  
       <div class="item-exame">
@@ -318,27 +339,25 @@
         <div class="avatar-medico">CM</div>
         <p class="nome-medico">Dr. Carlos Mendes</p>
       </div>
- 
-      <button class="botao-historico">Ver Histórico</button>
+<router-link to="/medico-familiar">
+  <button class="botao-historico">Ver Histórico</button>
+</router-link>
+
     </div>
  
     <div class="cartao-acoes-rapidas">
       <h2 class="titulo-acoes-rapidas">Ações Rápidas</h2>
- 
-      <button class="botao-acao-rapida">
-        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M8%202v3%22%20%2F%3E%3Cpath%20d%3D%22M16%202v3%22%20%2F%3E%3Crect%20x%3D%223%22%20y%3D%223%22%20width%3D%2218%22%20height%3D%2218%22%20rx%3D%222%22%20%2F%3E%3Cpath%20d%3D%22M3%209h18%22%20%2F%3E%3C%2Fsvg%3E" width="20" height="20" alt="">
-        Agendar Consulta
-      </button>
- 
-      <button class="botao-acao-rapida">
-        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M6%2022a2%202%200%200%201-2-2V4a2%202%200%200%201%202-2h8a2.4%202.4%200%200%201%201.704.706l3.588%203.588A2.4%202.4%200%200%201%2020%208v12a2%202%200%200%201-2%202z%22%20%2F%3E%3Cpath%20d%3D%22M14%202v5a1%201%200%200%200%201%201h5%22%20%2F%3E%3Cpath%20d%3D%22M10%209H8%22%20%2F%3E%3Cpath%20d%3D%22M16%2013H8%22%20%2F%3E%3Cpath%20d%3D%22M16%2017H8%22%20%2F%3E%3C%2Fsvg%3E" width="20" height="20" alt="">
-        Agendar Exame
-      </button>
- 
-      <button class="botao-acao-rapida">
-        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23000000%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20%3E%3Cpath%20d%3D%22M12%2015V3%22%20%2F%3E%3Cpath%20d%3D%22M21%2015v4a2%202%200%200%201-2%202H5a2%202%200%200%201-2-2v-4%22%20%2F%3E%3Cpath%20d%3D%22m7%2010%205%205%205-5%22%20%2F%3E%3C%2Fsvg%3E" width="20" height="20" alt="">
-        Baixar Resultados
-      </button>
+ <router-link to="/agendar-consulta">
+  <button class="botao-acao-rapida">Agendar Consulta</button>
+</router-link>
+
+<router-link to="/agendar-exame">
+  <button class="botao-acao-rapida">Agendar Exame</button>
+</router-link>
+
+<a href="/src/imagem/preview.webp" download="resultado-exame.webp">
+  <button class="botao-acao-rapida">Baixar Resultados</button>
+</a>
     </div>
  
   </div>
@@ -664,22 +683,32 @@ main{
  
 .acoes-agendamento button {
   flex: 1;
-  padding: 10px 0;
+  padding: 10px 6vw;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 500;
-  cursor: pointer;
   background: #ffffff;
 }
  
 .botao-reagendar {
-  border: 1px solid #93c5fd;
-  color: #2563eb;
+ flex: 1;
+  padding: 10px 6vw;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #ffffff;
+  color: #418CEF;
+  border: 1px solid #418CEF;
 }
  
 .botao-cancelar {
   border: 1px solid #fca5a5;
   color: #dc2626;
+  padding: 10px 6vw;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  background: #ffffff;
 }
  
 .cartao-medicamentos {
