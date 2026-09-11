@@ -178,3 +178,4 @@ const medicosBase = [
 
 export default paginas;
 export { pacientesBase };
+export { medicosBase }
