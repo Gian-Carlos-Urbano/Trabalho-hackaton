@@ -25,5 +25,80 @@ const paginas = [
     subtitulo: 'Conheça todas as especialidades disponíveis na UBS Digital e agende sua consulta'
   }
 ];
+const pacientesBase = [
+  {
+    nome: 'Gamaliel',
+    peso: 72,
+    medicamentos: [
+      {
+        nome: 'Losartana',
+        dose: 50,
+        vezes: 1,
+        horarios: ['noite']
+      },
+      {
+        nome: 'Metformina',
+        dose: 850,
+        vezes: 2,
+        horarios: ['manhã', 'noite']
+      }
+    ],
+    medicoFamiliar: 'Dr. Carlos Mendes',
+    exames: [
+      {
+        tipo: 'Hemograma Completo',
+        data: '02 de maio de 2026',
+        medico: 'Dr. Carlos Mendes'
+      },
+      {
+        tipo: 'Raio-X Tórax',
+        data: '20 de abril de 2026',
+        medico: 'Dr. Paulo Costa'
+      }
+    ],
+    consultas: [
+      {
+        motivo: 'Dor no Abdômen',
+        data: '02 de maio de 2026',
+        medico: 'Dr. Carlos Mendes'
+      }
+    ]
+  },
+  {
+    nome: 'Lucas',
+    peso: 75,
+    medicamentos: [
+      {
+        nome: 'PuranT4',
+        dose: 37.5,
+        vezes: 1,
+        horarios: ['Manhã']
+      },
+      {
+        nome: 'Symbicort',
+        dose: 200,
+        vezes: 2,
+        horarios: ['manhã', 'noite']
+      }
+    ],
+    medicoFamiliar: 'Dr. Marcos',
+    exames: [
+      {
+        tipo: 'Hemograma Completo',
+        data: '02 de maio de 2026',
+        medico: 'Dr. Carlos Mendes'
+      },
+    ],
+    consultas: [
+      {
+        especialidade: 'Pneumologista',
+        motivo: 'Dificuldade para respirar',
+        data: '02 de maio de 2026',
+        medico: 'Dr. Carlos Mendes'
+      }
+    ]
+  },
+]
 
 export default paginas;
+export { pacientesBase };
